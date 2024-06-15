@@ -1,0 +1,12 @@
+unique_words = set()
+word_order = []
+while True:
+    word = input().strip()
+    if word == '':
+        break
+    if word not in unique_words:
+        unique_words.add(word)
+        # Add the word to the order list
+        word_order.append(word)
+for word in word_order:
+    print(word)
